@@ -1,0 +1,201 @@
+WEBSITE CONCEPT
+1. Customers can search for properties by specifications and location.
+  LANDING PAGE
+  ~ index.php
+~ Property owners can list and monitor their properties on the website this means I need an admin panel for property owners (OWNERPANEL.PHP).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+🌐 Website Structure for Ark Haven
+🏠 1. Homepage (arkhaven.com)
+Purpose: Introduce the brand and give quick access to all 3 service areas.
+
+Sections:
+
+Hero Banner with a tagline like:
+
+"Your Trusted Partner in Real Estate, Land, and Motors."
+
+Intro Paragraph (about Ark Haven’s mission and vision).
+
+Three Service Highlights with icons/images:
+
+🏘️ Real Estate – Homes & Rentals
+
+🌍 Land – Agricultural, Commercial & Plots
+
+🚗 Motors – Cars, Bikes & Heavy Machinery
+
+Quick Buttons: “Explore Real Estate” | “View Land Listings” | “Browse Motors”
+
+🧭 2. Navigation Menu (Sticky Topbar)
+Home
+
+Real Estate
+
+Land
+
+Motors
+
+About Us
+
+Contact
+
+[Optional] Blog / News
+
+🏘️ 3. Real Estate Page
+URL: /real-estate
+
+Content:
+
+Property Listings (with filters: for sale/rent, location, type)
+
+Featured Properties
+
+Buyer/Seller Guides
+
+Testimonials
+
+Inquiry Form
+
+🌍 4. Land Page
+URL: /land
+
+Content:
+
+Available Land Listings (with filters)
+
+Map Integration (Google Maps API or equivalent)
+
+Types of Land: Residential / Commercial / Agricultural
+
+Land Buying Process Guide
+
+Request Land Search
+
+🚗 5. Motors Page
+URL: /motors
+
+Content:
+
+Vehicles for Sale (Cars, Motorbikes, Heavy Equipment)
+
+Vehicle Details (Specs, Price, Images)
+
+Financing/Loan Info (if offered)
+
+Search & Filter Options
+
+Sell Your Vehicle (Form)
+
+📖 6. About Us Page
+URL: /about
+
+Content:
+
+Company History
+
+Mission & Vision
+
+Team Members (with photos/bios if possible)
+
+Licenses / Certifications
+
+Why Choose Us
+
+✉️ 7. Contact Page
+URL: /contact
+
+Content:
+
+Contact Form
+
+Office Location(s)
+
+Phone / Email / WhatsApp
+
+Operating Hours
+
+Social Media Links
+
+📰 Optional: Blog/News
+URL: /blog
+
+Content Ideas:
+
+Property/Car Buying Tips
+
+Market Trends
+
+Company Announcements
+
+✅ Other Features to Consider
+🔍 Search Bar across all listing pages
+
+📱 Mobile-Responsive Design
+
+🗂️ Admin Dashboard for managing listings
+
+💬 Live Chat or WhatsApp Integration
+
+💌 Email Capture / Newsletter Signup
+
+Would you like me to help you design this structure visually or write content for any section (like the homepage or about us)?

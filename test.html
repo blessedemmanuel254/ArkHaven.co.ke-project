@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    .horizontal-or {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px;
+      gap: 10px;
+    }
+
+    .horizontal-or .line {
+      height: 1px;
+      width: 30px;
+      background-color: #ccc;
+    }
+
+    .horizontal-or .content {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .horizontal-or .icon {
+      color: #007bff;
+      font-size: 16px;
+    }
+  </style>
+  <!-- Font Awesome for the icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="horizontal-or">
+  <div class="line"></div>
+  <div class="content">
+    <span>OR</span>
+    <i class="fas fa-arrow-circle-right icon"></i>
+  </div>
+  <div class="line"></div>
+</div>
+
+</body>
+</html>
