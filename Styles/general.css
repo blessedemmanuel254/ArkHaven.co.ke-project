@@ -409,7 +409,7 @@ html body {
 }
 
 /* Main section */
-.hero-section {
+.container .hero-section {
   position: relative;
   width: 100%;
   height: 70vh;
@@ -418,44 +418,26 @@ html body {
   margin-top: 115px;
 }
 
-.hero-section h1 {
-  color: white;
-  font-weight: bold;
-}
-
-.hero-section h1 span {
-  font-family: 'Great Vibes', cursive;
-  color: rgba(255, 255, 255, 0.719);
-  font-weight: normal;
-}
-
-.slider-container {
+.container .hero-section .slider-container {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
-.slider-track {
+.container .hero-section .slider-container .slider-track {
   display: flex;
   transition: transform 1s ease-in-out;
   height: 100%;
 }
 
-.slider-track img {
+.container .hero-section .slider-container .slider-track img {
   width: 100vw;
   height: 100%;
   object-fit: cover;
   flex-shrink: 0;
 }
 
-.background-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-.bottom-fade {
+.container .hero-section .bottom-fade {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -465,7 +447,7 @@ html body {
   z-index: 1;
 }
 
-.content {
+.container .hero-section .content {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -479,6 +461,19 @@ html body {
   gap: 16px;
   align-items: center;
   width: 100%;
+}
+
+.container .hero-section .content .hero-section h1 {
+  color: white;
+  font-weight: bold;
+  padding: 8px;
+  text-align: center;
+}
+
+.container .hero-section .content h1 span {
+  font-family: 'Great Vibes', cursive;
+  color: rgba(255, 255, 255, 0.719);
+  font-weight: normal;
 }
 
 /* Contianer search */
@@ -509,10 +504,8 @@ html body {
 }
 
 .container .sarchR form:first-of-type {
-  background-color: #dedede6b;
   border-radius: 4px;
   padding: 8px 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: fit-content;
 }
 
@@ -623,6 +616,12 @@ html body {
   width: 100%;
 }
 
+@media (max-width: 484px) {
+  .container .sarchR form .fContainer {
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 900px) {
   .container .sarchR {
     flex-direction: column;
@@ -688,4 +687,72 @@ input[type=range]::-moz-range-thumb {
   margin-top: -6px;
   position: relative;
   z-index: 1;
+}
+
+/* Services section */
+.container .servcs {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 100px 16px;
+}
+
+.container .servcs .servcsHder {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  font-size: 18px;
+  color: #0f0f0f;
+}
+
+.container .servcs .servcsHder h1 {
+  text-align: center;
+}
+
+.container .servcs .servcsHder p {
+  font-size: 15px;
+  color: #898888;
+  text-align: center;
+}
+
+.container .servcs .servcsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 50px;
+  max-width: 100%;
+}
+
+.container .servcs .servcsContainer a.scContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #0f0f0f;
+  transition: transform 0.3s ease;
+}
+
+.container .servcs .servcsContainer a.scContainer:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .servcs .servcsContainer a.scContainer h2 {
+  text-align: center;
+}
+
+.container .servcs .servcsContainer a.scContainer p {
+  color: #898888;
+  text-align: center;
+}
+
+@media (max-width: 490px) {
+  .container .servcs .servcsContainer {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }

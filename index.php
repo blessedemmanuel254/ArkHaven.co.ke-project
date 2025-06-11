@@ -150,24 +150,11 @@
             <option value="">-- Select your prefered search --</option>
             <option value="">Land</option>
             <option value="">Rentals</option>
+            <option value="">House</option>
             <option value="">Plot</option>
             <option value="">Motor vehicle</option>
             <option value="">Apartment</option>
             <option value="">Beach house</option>
-          </select>
-          <select name="" id="prdctSch" required>
-            <option value="">Location (County)</option><!-- 
-            <option value="">Nairobi</option>
-            <option value="">Mombasa</option> -->
-            <option value="">Kilifi</option>
-            <!-- <option value="">3</option>
-            <option value="">4</option>
-            <option value="">5</option>
-            <option value="">6</option>
-            <option value="">7</option>
-            <option value="">8</option>
-            <option value="">9</option>
-            <option value="">10</option> -->
           </select>
           <button type="submit">Search</button>
         </form>
@@ -265,8 +252,40 @@
           <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
         </form>
       </div>
+      <div class="servcs">
+        <div class="servcsHder">
+          <h1>Our Property Solutions</h1>
+          <p>At Ark Harven, we provide trusted real estate services tailored to meet diverse needs — from land acquisition to luxurious living and reliable mobility.</p>
+        </div>
+        <div class="servcsContainer">
+          <a href="#" class="scContainer">
+            <img src="Images/Land Illustration.avif" alt="Land Illustration" width="250">
+            <h2>Land</h2>
+            <p>Secure prime plots in fast-growing areas, ideal for residential, commercial, or investment development.</p>
+          </a>
+          <a href="#" class="scContainer">
+            <img src="Images/House Illustration.avif" alt="House Illustration" width="250">
+            <h2>House</h2>
+            <p>Explore affordable and stylish homes designed for comfort and family living in well-planned communities.</p>
+          </a>
+          <a href="#" class="scContainer">
+            <img src="Images/Villas Illustration.avif" alt="Villas Illustration" width="250">
+            <h2>Villas</h2>
+            <p>Indulge in high-end living with exclusive villas featuring private spaces, modern architecture, and luxury amenities.</p>
+          </a>
+          <a href="#" class="scContainer">
+            <img src="Images/Apartments Illustration.avif" alt="Apartments Illustration" width="250">
+            <h2>Apartments</h2>
+            <p>Find budget-friendly or executive apartment units in prime locations with great accessibility and lifestyle features.</p>
+          </a>
+          <a href="#" class="scContainer">
+            <img src="Images/Motors Illustration.avif" alt="Motors Illustration" width="250">
+            <h2>Motors</h2>
+            <p>Reliable vehicle options tailored to your mobility needs — from personal cars to commercial-use vans.</p>
+          </a>
+        </div>
+      </div>
     </main>
-
     <footer>
       <p>&copy; 2025, ArkHarven.com, All Rights reserved.</p>
     </footer>
