@@ -155,7 +155,21 @@
             <option value="">Apartment</option>
             <option value="">Beach house</option>
           </select>
-          <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Search</button>
+          <select name="" id="prdctSch" required>
+            <option value="">Location (County)</option><!-- 
+            <option value="">Nairobi</option>
+            <option value="">Mombasa</option> -->
+            <option value="">Kilifi</option>
+            <!-- <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+            <option value="">10</option> -->
+          </select>
+          <button type="submit">Search</button>
         </form>
 
         <div class="vertical-or">
@@ -204,14 +218,31 @@
                 <option value="">8</option>
                 <option value="">9</option>
                 <option value="">10</option>
+                <option value="">More</option>
               </select>
             </div>
             <div class="inpBox">
+              <label for="">Bathroom(s)</label>
+              <select name="" id="prdctSch" required>
+                <option value="">-- Select --</option>
+                <option value="">None</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">More</option>
+              </select>
+            </div>
+          </div>
+          <div class="fContainer">
+            <div class="inpBox">
               <label for="">Location (County)</label>
               <select name="" id="prdctSch" required>
-                <option value="">e.g Kilifi</option>
+                <option value="">e.g Kilifi</option><!-- 
                 <option value="">Nairobi</option>
-                <option value="">Mombasa</option>
+                <option value="">Mombasa</option> -->
                 <option value="">Kilifi</option>
                 <!-- <option value="">3</option>
                 <option value="">4</option>
@@ -231,7 +262,7 @@
               <input type="range" id="maxRange" min="100000" max="100000000" step="10000" value="100000000">
             </div>
           </div>
-          <button type="submit">Find&nbsp;house</button>
+          <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
         </form>
       </div>
     </main>
