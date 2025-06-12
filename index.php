@@ -171,7 +171,6 @@
           </div>
           <div class="line"></div>
         </div>
-
         <form>
           <h2>Do you want to specify your search?</h2>
           <div class="fContainer">
@@ -252,6 +251,10 @@
           <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
         </form>
       </div>
+      <div class="servcsHder">
+        <h1>Our Property Solutions</h1>
+        <p>At Ark Harven, we provide trusted real estate services tailored to meet diverse need - from land acquisition to luxurious living and reliable.</p>
+      </div>
       <div class="servcs">
         <div class="servcsHder">
           <h1>Our Property Solutions</h1>
@@ -290,7 +293,6 @@
       <p>&copy; 2025, ArkHarven.com, All Rights reserved.</p>
     </footer>
   </div>
-
   <script src="Scripts/general.js"></script>
 </body>
 </html>
