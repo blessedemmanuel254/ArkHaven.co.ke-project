@@ -44,7 +44,7 @@
         </div>
         <div class="sContainer hRhs">
           <a class="ercr" href="https://mail.google.com/mail/?view=cm&to=arkhaven23@gmail.com" target="_blank">
-            <i class="fa-solid fa-envelope"></i>&nbsp;arkhaven23@gmail.com
+            <i class="fa-solid fa-envelope"></i>&nbsp;arkharven23@gmail.com
           </a>
           <a class="ercr" href="#">Help</a>
           <a href="tel:+254708670396" class="aLst"> 
@@ -89,7 +89,7 @@
         <a href="">Motors</a>
       </ul>
       <a class="ercr" href="https://mail.google.com/mail/?view=cm&to=arkhaven23@gmail.com" target="_blank">
-        <i class="fa-solid fa-envelope"></i>&nbsp;arkhaven23@gmail.com
+        <i class="fa-solid fa-envelope"></i>&nbsp;arkharven23@gmail.com
       </a>
       <a class="ercr" href="#">Help</a>
     </div>
@@ -113,7 +113,7 @@
             <div class="sender">Ark Harven</div>
             <div class="message">
               Welcome! 😊<br>
-              How can we be of service?
+              How can I help you?
             </div>
             <div class="time">
               11:31 PM
@@ -131,16 +131,21 @@
       <div class="hero-section">
         <div class="slider-container">
           <div class="slider-track">
-            <img src="Images/17428171202712_homepagecover.jpg" alt="Slide 1">
-            <img src="Images/17428171202712_homepagecover.jpg" alt="Slide 1 clone">
-            <img src="Images/17428171202712_homepagecover.jpg" alt="Slide 1 clone">
-            <img src="Images/17428171202712_homepagecover.jpg" alt="Slide 1 clone">
+            <img src="Images/Land Background.avif" data-label="Lands" alt="Slide 1">
+            <img src="Images/Houses Background.avif" data-label="Houses" alt="Slide 2">
+            <img src="Images/Rentals Background.avif" data-label="Rentals" alt="Slide 3">
+            <img src="Images/Motors Background.avif" data-label="Motors" alt="Slide 4">
+            <img src="Images/Land Background.avif" data-label="Land" alt="Slide 1 clone">
           </div>
         </div>
 
         <div class="bottom-fade"></div>
         <div class="content">
-          <h1><span>Your search for<br></span>Beach Villas <br><span> ends&nbsp;here.</span></h1>
+          <h1 id="main-heading">
+            <span>Your search for<br></span>
+            <span id="typing-text"></span><br>
+            <span> ends&nbsp;here.</span>
+          </h1>
         </div>
       </div>
       <div class="sarchR">
@@ -251,9 +256,85 @@
           <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
         </form>
       </div>
-      <div class="servcsHder">
-        <h1>Our Property Solutions</h1>
-        <p>At Ark Harven, we provide trusted real estate services tailored to meet diverse need - from land acquisition to luxurious living and reliable.</p>
+      <div class="lstngs">
+        <div class="lstngsHd">
+          <i class="fa-regular fa-rectangle-list"></i>
+          <h1>0UR&nbsp;NEW&nbsp;LISTINGS</h1>
+        </div>
+        <div class="lstngsContanier">
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>Mwahi Wema<br><span>Real Estate Agent</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
+            </div>
+          </div>
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Rentals Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>Justine Kaluhi<br><span>Real Estate Agent</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 1,500,089</strong></div>
+            </div>
+          </div>
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Houses Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>WestKenya Factory<br><span>Kenyan Company</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Kimilili, <strong>Bungoma</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 10M</strong></div>
+            </div>
+          </div>
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>Locovia Realators<br><span>Real Estate Agent</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Joska, <strong>Nairobi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
+            </div>
+          </div>
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Beach Villas Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>ArkHaven Test<br><span>Real Estate company</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Diani, <strong>Mombasa</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 45,009,500</strong></div>
+            </div>
+          </div>
+          <div class="lstngsDiv">
+            <p class="avbiltyPrgh available">Available</p>
+            <img class="lstngImg" src="Images/Motors Background.avif" alt="ListedLi">
+            <div class="lstngsLower">
+              <div class="sellerPrfl">
+                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+                <p>Kubende Kevin<br><span>Real Estate Agent</span></p>
+              </div>
+              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 150M</strong></div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="servcs">
         <div class="servcsHder">
