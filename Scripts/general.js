@@ -38,30 +38,102 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
-
 // Home image slider
 const track = document.querySelector('.slider-track');
 const slides = document.querySelectorAll('.slider-track img');
 const totalSlides = slides.length;
+const heading = document.getElementById('main-heading');
+const labels = Array.from(slides).map(slide => slide.dataset.label);
+const finalMessage = "Your search<br>ends here.";
 let index = 0;
 
-function nextSlide() {
-  index++;
-  track.style.transition = 'transform 1s ease-in-out';
-  track.style.transform = `translateX(-${index * 100}vw)`;
+// Typing text inside a specific element (used for both span and final h1)
+function typeTextInElement(element, text, callback) {
+  element.innerHTML = '';
+  let charIndex = 0;
 
-  if (index === totalSlides - 1) {
-    setTimeout(() => {
-      track.style.transition = 'none';
-      track.style.transform = `translateX(0vw)`;
-      index = 0;
-    }, 1000);
-  }
+  const typeInterval = setInterval(() => {
+    element.innerHTML += text.charAt(charIndex);
+    charIndex++;
+    if (charIndex === text.length) {
+      clearInterval(typeInterval);
+      if (callback) setTimeout(callback, 1500); // pause before deleting
+    }
+  }, 100);
 }
 
-setInterval(nextSlide, 3000);
+function deleteTextInElement(element, callback) {
+  let text = element.innerHTML;
+  let charIndex = text.length;
 
+  const deleteInterval = setInterval(() => {
+    element.innerHTML = text.substring(0, charIndex - 1);
+    charIndex--;
+    if (charIndex === 0) {
+      clearInterval(deleteInterval);
+      if (callback) callback();
+    }
+  }, 60);
+}
 
+function restoreInitialHeading() {
+  heading.classList.remove('typing');
+  heading.innerHTML = `
+    <span>Your search for<br></span>
+    <span id="typing-text"></span><br>
+    <span> ends&nbsp;here.</span>
+  `;
+  typeTextInElement(document.getElementById('typing-text'), labels[0]);
+}
+
+function showFinalTypedHeading(callback) {
+  heading.innerHTML = '';
+  heading.classList.add('typing');
+  const message = finalMessage.replace(/<br>/g, '\n'); // treat <br> as line break during typing
+  let container = document.createElement('div');
+  heading.appendChild(container);
+
+  typeTextInElement(container, message, () => {
+    deleteTextInElement(container, () => {
+      heading.classList.remove('typing');
+      if (callback) callback();
+    });
+  });
+}
+
+function nextSlide() {
+  const span = document.getElementById('typing-text');
+  if (!span) return; // fallback
+  deleteTextInElement(span, () => {
+    index++;
+
+    if (index === totalSlides - 1) {
+      // Final slide
+      track.style.transition = 'transform 1s ease-in-out';
+      track.style.transform = `translateX(-${index * 100}vw)`;
+
+      setTimeout(() => {
+        showFinalTypedHeading(() => {
+          track.style.transition = 'none';
+          track.style.transform = `translateX(0vw)`;
+          index = 0;
+          restoreInitialHeading();
+        });
+      }, 0);
+    } else {
+      // Regular slide
+      track.style.transition = 'transform 1s ease-in-out';
+      track.style.transform = `translateX(-${index * 100}vw)`;
+      typeTextInElement(span, labels[index]);
+    }
+  });
+}
+
+// Start
+typeTextInElement(document.getElementById('typing-text'), labels[0]);
+setInterval(nextSlide, 5000);
+
+/* Price Specify */
 const minRange = document.getElementById('minRange');
 const maxRange = document.getElementById('maxRange');
 const minVal = document.getElementById('minVal');
