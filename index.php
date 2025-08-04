@@ -247,7 +247,7 @@
             </div>
           </div>
           <div class="fContainer">
-            <div class="slider-container">
+            <div class="slider-price-container">
               <div class="slider-label">Price (<span id="minVal">100,000</span> - <span id="maxVal">100,000,000</span>) KES</div>
               <input type="range" id="minRange" min="100000" max="100000000" step="10000" value="100000">
               <input type="range" id="maxRange" min="100000" max="100000000" step="10000" value="100000000">
@@ -273,6 +273,13 @@
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
             </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>100k</p>
+              </div>
+            </div>
           </div>
           <div class="lstngsDiv">
             <p class="avbiltyPrgh available">Available</p>
@@ -284,6 +291,13 @@
               </div>
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 1,500,089</strong></div>
+            </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>5</p>
+              </div>
             </div>
           </div>
           <div class="lstngsDiv">
@@ -297,6 +311,13 @@
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Kimilili, <strong>Bungoma</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 10M</strong></div>
             </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>1.1k</p>
+              </div>
+            </div>
           </div>
           <div class="lstngsDiv">
             <p class="avbiltyPrgh available">Available</p>
@@ -308,6 +329,13 @@
               </div>
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Joska, <strong>Nairobi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
+            </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>30</p>
+              </div>
             </div>
           </div>
           <div class="lstngsDiv">
@@ -321,6 +349,13 @@
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Diani, <strong>Mombasa</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 45,009,500</strong></div>
             </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>4k</p>
+              </div>
+            </div>
           </div>
           <div class="lstngsDiv">
             <p class="avbiltyPrgh available">Available</p>
@@ -332,6 +367,13 @@
               </div>
               <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
               <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 150M</strong></div>
+            </div>
+            <div class="lANDdL">
+              <p class="view">View details</p>
+              <div class="innerIs">
+                <i class="fa-solid fa-heart"></i>
+                <p>30k</p>
+              </div>
             </div>
           </div>
         </div>

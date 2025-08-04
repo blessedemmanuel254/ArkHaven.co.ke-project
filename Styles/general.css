@@ -413,7 +413,7 @@ html body {
 .container .hero-section {
   position: relative;
   width: 100vw;
-  height: 90vh;
+  height: 80vh;
   overflow: hidden;
   font-size: 28px;
   margin-top: 115px;
@@ -423,6 +423,8 @@ html body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .container .hero-section .slider-container .slider-track {
@@ -527,12 +529,13 @@ html body {
 }
 
 .container .sarchR form select, .container .sarchR form button {
-  border: 1px solid #898888;
+  border: 1px solid #898888a2;
   padding: 8px 16px;
   border-radius: 4px;
   font-size: 16px;
   outline: none;
   color: #898888;
+  background-color: #8988881f;
 }
 
 .container .sarchR form select option:not(:nth-of-type(1)) {
@@ -661,7 +664,7 @@ html body {
   }
 }
 
-.slider-container {
+.slider-price-container {
   width: 100%;
   padding: 5px;
 }
@@ -717,13 +720,18 @@ input[type=range]::-moz-range-thumb {
 
 .container .lstngs .lstngsHd {
   display: flex;
-  gap: 16px;
+  gap: 10px;
+  align-items: center;
   background-color: #0f0f0f;
   color: white;
   border-radius: 30px;
   width: fit-content;
-  padding: 6px;
+  padding: 5px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container .lstngs .lstngsHd i {
+  font-size: 18px;
 }
 
 .container .lstngs .lstngsHd h1 {
@@ -738,15 +746,17 @@ input[type=range]::-moz-range-thumb {
 
 .container .lstngs .lstngsContanier .lstngsDiv {
   background-color: white;
-  padding: 6px;
   border-radius: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  height: fit-content;
+  height: clamp(400px, 400px 400px);
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 14px;
   justify-content: space-between;
+  padding: 2px;
 }
 
 .container .lstngs .lstngsContanier .lstngsDiv p.avbiltyPrgh {
@@ -758,8 +768,7 @@ input[type=range]::-moz-range-thumb {
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 10;/* 
-  font-weight: 550; */
+  z-index: 10;
 }
 
 .container .lstngs .lstngsContanier .lstngsDiv img.lstngImg {
@@ -771,6 +780,7 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  padding: 10px;
 }
 
 .container .lstngs .lstngsContanier .lstngsDiv .lstngsLower .sellerPrfl {
@@ -813,11 +823,61 @@ input[type=range]::-moz-range-thumb {
   display: flex;
   gap: 5px;
   align-items: center;
-  padding-bottom: 10px;
 }
 
 .container .lstngs .lstngsContanier .lstngsDiv .lstngsLower .price i {
   color: #077db4;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px 10px 10px;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL p.view {
+  color: white;
+  background-color: #077db4;
+  border: none;
+  border-radius: 30px;
+  padding: 6px;
+  cursor: pointer;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL p.view:hover {
+  opacity: 0.875;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL .innerIs {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL .innerIs i {
+  background-color: #8988887e;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL .innerIs i:hover {
+  scale: 1.2;
+}
+
+.container .lstngs .lstngsContanier .lstngsDiv .lANDdL .innerIs p {
+  font-weight: 550;
+  color: #898888;
 }
 
 /* Services section */
