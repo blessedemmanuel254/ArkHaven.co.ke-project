@@ -2,8 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
+
 
 input, button, select {
   border: none;
@@ -29,7 +30,6 @@ html body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
   overflow-x: hidden;
 }
 
@@ -58,7 +58,7 @@ html body {
   background-color: #dedede9c;
 }
 
-.container header section .sContainer {
+.container header section .sContainer, .container footer .ftrContainer .inFCntr .inInDiv.last-child div.sContainer {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -528,7 +528,7 @@ html body {
   height: fit-content;
 }
 
-.container .sarchR form select, .container .sarchR form button {
+.container .sarchR form select, .container .sarchR form button, .container footer .ftrContainer form input, .container footer .ftrContainer form button {
   border: 1px solid #898888a2;
   padding: 8px 16px;
   border-radius: 4px;
@@ -612,14 +612,14 @@ html body {
   margin: 0 10px;
 }
 
-.container .sarchR form button {
+.container .sarchR form button, .container footer .ftrContainer form button {
   background-color: #0f0f0f;
   color: white;
   cursor: pointer;
   border: none;
 }
 
-.container .sarchR form button:hover {
+.container .sarchR form button:hover, .container footer .ftrContainer form button:hover {
   opacity: .875;
 }
 
@@ -950,16 +950,196 @@ input[type=range]::-moz-range-thumb {
 
 /* Footer */
 .container footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-  margin-top: 40px;
+  background-color: #0f0f0f;
+  padding: 30px 16px;
+  font-size: 14px;
+  color: white;
+
 }
 
-.container footer p {
+.container footer .ftrContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+.container footer .ftrContainer form, .container footer .ftrContainer .inFCntr .inInDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container footer .ftrContainer form img {
+  width: clamp(60px, 8.5vw, 90px);
+  height: clamp(60px, 8.5vw, 90px);
+}
+
+.container footer .ftrContainer form h1 {
+  font-size: clamp(25px, 4.5vw, 50px);
+  font-weight: normal;
+}
+
+.container footer .ftrContainer form input, .container footer .ftrContainer form button  {
+  width: 80%;
+}
+
+.container footer .ftrContainer form button {
+  background-color: #077db4;
+}
+
+.container footer .ftrContainer .inFCntr {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.container footer .ftrContainer .inFCntr.lnks {
+  border-left: 1px solid; /* Width of the border */
+  border-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),   /* top faded */
+    rgba(255, 255, 255, 1),   /* middle solid */
+    rgba(255, 255, 255, 0)    /* bottom faded */
+  ) 1 100%;
+  border-right: 1px solid; /* Width of the border */
+  border-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),   /* top faded */
+    rgba(255, 255, 255, 1),   /* middle solid */
+    rgba(255, 255, 255, 0)    /* bottom faded */
+  ) 1 100%;
+}
+
+.container footer .ftrContainer .inFCntr:last-of-type {
+  justify-content: end;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv h4 {
+  font-size: 19px;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv a {
+  text-decoration: none;
   color: #898888;
-  font-size: 14px;
-  text-align: center;
+  width: fit-content;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv a:hover {
+  opacity: .875;
+  color: #077db4;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child {
+  text-align: end;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div {
+  padding-bottom: 30px;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div p {
+  color: #898888;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div p:first-of-type {
+  padding-bottom: 10px;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div.sContainer {
+  max-width: none;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div.sContainer a {
+  color: #077db4;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div.sContainer a:hover {
+  color: #898888;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div.sContainer a i {
+  font-size: 20px;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div:last-of-type a {
+  color: white;
+  font-size: 15px;
+}
+
+.container footer .ftrContainer .inFCntr .inInDiv.last-child div:last-of-type a:hover {
+  color: #898888;
+}
+
+.container footer .fterP {
+  padding-top: 10px;
+  border-top: 1px solid #89888865;
+  color: rgba(255, 255, 255, 0.438);
+  border-top: 1px solid; /* Width of the border */
+  border-image: linear-gradient(
+    to right,
+    rgba(138, 135, 135, 0),   /* top faded */
+    rgba(138, 135, 135, 1),   /* middle solid */
+    rgba(138, 135, 135, 0)    /* bottom faded */
+  ) 1;
+}
+
+.container footer .fterP a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.61);
+}
+
+.container footer .fterP a:hover {
+  color: #077db4;
+}
+
+@media (max-width: 842px) {
+  .container footer .ftrContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .container footer .ftrContainer .inFCntr.lnks {
+    border-right: none;
+  }
+  
+  .container footer .ftrContainer .inFCntr:last-of-type {
+    justify-content: start;
+  }
+
+  .container footer .ftrContainer .inFCntr .inInDiv.last-child {
+    text-align: start;
+  }
+}
+
+@media (max-width: 572px) {
+  .container footer .ftrContainer {
+    grid-template-columns: 1fr;
+    padding-bottom: 16px;
+  }
+
+  .container footer .ftrContainer form {
+    padding-bottom: 40px;
+  }
+
+  .container footer .ftrContainer .inFCntr {
+    justify-content: start;
+  }
+
+  .container footer .ftrContainer .inFCntr.lnks {
+    border-left: none;
+    border-top: 1px solid; /* Width of the border */
+    border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),   /* top faded */
+      rgba(255, 255, 255, 1),   /* middle solid */
+      rgba(255, 255, 255, 0)    /* bottom faded */
+    ) 1;
+    border-bottom: 1px solid; /* Width of the border */
+    border-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0),   /* top faded */
+      rgba(255, 255, 255, 1),   /* middle solid */
+      rgba(255, 255, 255, 0)    /* bottom faded */
+    ) 1;
+  }
 }
