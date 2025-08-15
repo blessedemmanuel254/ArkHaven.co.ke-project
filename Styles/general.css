@@ -79,6 +79,7 @@ html body {
   text-decoration: none;
   color: #898888;
   display: flex;
+  align-items: center;
 }
 
 .container header section:first-of-type i {
@@ -413,7 +414,7 @@ html body {
 .container .hero-section {
   position: relative;
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   overflow: hidden;
   font-size: 28px;
   margin-top: 115px;
@@ -459,22 +460,27 @@ html body {
   z-index: 2;
   text-align: center;
   width: fit-content;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 16px;
-  align-items: center;
   width: 100%;
+  height: 100%;
+  padding: 50px 20px;
+  font-size: 20px;
 }
 
-.container .hero-section .content h1 {
+.container .hero-section .content div.container1 {
+  display: flex;
+}
+
+.container .hero-section .content div.container1 h1.main-heading {
   color: white;
   font-weight: bold;
-  padding: 8px;
   text-align: center;
 }
 
 .container .hero-section .content h1 span,.container .hero-section .content h1#main-heading div {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Dancing Script', cursive;
   color: rgba(255, 255, 255, 0.719);
   font-weight: normal;
 }
@@ -490,6 +496,95 @@ html body {
   font-weight: bold;
 }
 
+.container .hero-section .content div.container1:last-of-type {
+  display: flex;
+  justify-content: end;
+}
+
+.container .hero-section .content form {
+  backdrop-filter: blur(8px);
+  border-radius: 25px;
+  border: 1px solid white;
+  padding: 8px 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container .hero-section .content form h1 {
+  font-size: 25px;
+}
+
+.container .hero-section .content form .breadcrumb {
+  display: flex;
+  list-style: none;
+  margin-top: 16px;
+  background-color: rgba(0, 0, 0, 0.267);
+  width: fit-content;
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%
+  );
+}
+
+.container .hero-section .content form .breadcrumb li {
+  padding: 8px 16px;
+  color: white;
+  font-weight: normal;
+  cursor: pointer;
+  background-color: #89888859;
+}
+
+.container .hero-section .content form .breadcrumb li:hover {
+  color: #0f0f0f;
+  opacity: .875;
+}
+
+/* First item: rectangle on left, chevron on right */
+.container .hero-section .content form .breadcrumb li.active {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%
+  );
+  background: linear-gradient(to right, #de0508, #de0509a2);
+}
+
+.container .hero-section .content form .breadcrumb li.active:hover {
+  color: white;
+  opacity: 1;
+}
+
+/* Middle items: chevron both left and right */
+.container .hero-section .content form .breadcrumb li:not(:first-child) {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 15px) 0,
+    100% 50%,
+    calc(100% - 15px) 100%,
+    0 100%,
+    15px 50%
+  );
+}
+
+/* Small gap between items */
+.container .hero-section .content form .breadcrumb li:not(:first-child) {
+  margin-left: -13px;
+}
+
+.container .hero-section .content form .inpCntr {
+  padding: 16px 0;
+  width: 100%;
+}
+
+.container .hero-section .content form .inpCntr .inpBox {
+  align-items: start;
+  width: 100%;
+}
 
 @keyframes blink {
   50% { border-color: transparent; }
@@ -528,7 +623,7 @@ html body {
   height: fit-content;
 }
 
-.container .sarchR form select, .container .sarchR form button, .container footer .ftrContainer form input, .container footer .ftrContainer form button {
+.container .sarchR form select, .container .sarchR form button, .container footer .ftrContainer form input, .container footer .ftrContainer form button, .container .hero-section .content form .inpCntr .inpBox input, .container .hero-section .content form .inpCntr .inpBox select, .container .hero-section .content form button {
   border: 1px solid #898888a2;
   padding: 8px 16px;
   border-radius: 4px;
@@ -608,11 +703,11 @@ html body {
 .or-divider::after {
   content: "";
   flex: 1;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #de0508;
   margin: 0 10px;
 }
 
-.container .sarchR form button, .container footer .ftrContainer form button {
+.container .sarchR form button, .container footer .ftrContainer form button, .container .hero-section .content form button {
   background-color: #0f0f0f;
   color: white;
   cursor: pointer;
@@ -623,13 +718,19 @@ html body {
   opacity: .875;
 }
 
-.container .sarchR form .fContainer {
+.container .hero-section .content form button {
+  width: 100%;
+  margin: 16px 0;
+  background-color: #077db4;
+}
+
+.container .sarchR form .fContainer, .container .hero-section .content form .inpCntr {
   display: flex;
   gap: 16px;
   justify-content: space-between;
 }
 
-.container .sarchR form .fContainer .inpBox {
+.container .sarchR form .fContainer .inpBox, .container .hero-section .content form .inpCntr .inpBox {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -811,7 +912,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .container .lstngs .lstngsContanier .lstngsDiv .lstngsLower p.descrnP i {
-  color: red;
+  color: #de0508;
   font-size: 12px;
 }
 
@@ -985,7 +1086,7 @@ input[type=range]::-moz-range-thumb {
 }
 
 .container footer .ftrContainer form button {
-  background-color: #077db4;
+  background-color: #de0508;
 }
 
 .container footer .ftrContainer .inFCntr {

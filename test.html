@@ -1,82 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Animated Form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exact Chevron Breadcrumb</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #e5e5e5;
+    padding: 20px;
+  }
 
-  <!-- AOS CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  .breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      background: #f0f0f0;
-    }
+  .breadcrumb li {
+    padding: 10px 25px;
+    color: white;
+    font-weight: normal;
+    clip-path: polygon(
+      0 0,
+      calc(100% - 15px) 0,
+      100% 50%,
+      calc(100% - 15px) 100%,
+      0 100%,
+      15px 50%
+    );
+  }
 
-    .form-container {
-      background: white;
-      padding: 30px;
-      max-width: 500px;
-      margin: 0 auto;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+  /* Gradient backgrounds matching screenshot */
+  .breadcrumb li:nth-child(1) {
+    background: linear-gradient(to right, #a35a1b, #b86d1c);
+  }
+  .breadcrumb li:nth-child(2) {
+    background: linear-gradient(to right, #b86d1c, #e28c20);
+  }
+  .breadcrumb li:nth-child(3) {
+    background: linear-gradient(to right, #e28c20, #f6a623);
+  }
+  .breadcrumb li:nth-child(4) {
+    background: linear-gradient(to right, #f6a623, #ffc766);
+    color: #333;
+  }
 
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 6px;
-      font-weight: bold;
-    }
-
-    input {
-      width: 100%;
-      padding: 10px;
-      font-size: 1rem;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-
-    button {
-      padding: 12px 20px;
-      font-size: 1rem;
-      background: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background: #0056b3;
-    }
-  </style>
+  /* Space between chevrons */
+  .breadcrumb li:not(:last-child) {
+    margin-right: 5px;
+  }
+</style>
 </head>
 <body>
 
-  <form class="form-container" data-aos="fade-up" data-aos-duration="1000">
-    <div class="form-group" data-aos="fade-right" data-aos-delay="200">
-      <label for="name">Name</label>
-      <input type="text" id="name" placeholder="Enter your name" />
-    </div>
+<ul class="breadcrumb">
+  <li>Home</li>
+  <li>Vehicles</li>
+  <li>Vans</li>
+  <li>Camper Vans</li>
+</ul>
 
-    <div class="form-group" data-aos="fade-left" data-aos-delay="400">
-      <label for="email">Email</label>
-      <input type="email" id="email" placeholder="Enter your email" />
-    </div>
-
-    <button type="submit" data-aos="zoom-in" data-aos-delay="600">Submit</button>
-  </form>
-
-  <!-- AOS JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
 </body>
 </html>
