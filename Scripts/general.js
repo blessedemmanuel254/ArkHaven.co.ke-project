@@ -38,6 +38,41 @@ document.addEventListener("keydown", function(event) {
   }
 });
 
+function showMessage() {
+  // Show typing first
+  const chatContainer = document.querySelector(".chat-container");
+  const typing = document.createElement("div");
+  typing.classList.add("chat-bubble");
+  typing.setAttribute("id", "typingIndicator");
+  typing.innerHTML = `
+    <div class="sender">Ark Harven</div>
+    <div class="typing-indicator">
+      <span></span><span></span><span></span>
+    </div>
+  `;
+  chatContainer.appendChild(typing);
+
+  // After 2 seconds, remove typing and show actual message
+  setTimeout(() => {
+    typing.remove();
+    const message = document.createElement("div");
+    message.classList.add("chat-bubble");
+    message.innerHTML = `
+      <div class="sender">Ark Harven</div>
+      <div class="message">
+        Welcome! 😊 <br>
+        How can I help you?
+      </div>
+      <div class="time">11:31 PM</div>
+    `;
+    chatContainer.appendChild(message);
+  }, 2000);
+}
+
+// Call it when opening chat
+showMessage();
+
+
 // Home image slider
 const track = document.querySelector('.slider-track');
 const slides = document.querySelectorAll('.slider-track img');
