@@ -25,9 +25,9 @@
   <title>Landing page | Ark Harven</title>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <section>
+  <header>
+    <section>
+      <div class="container">
         <div class="sContainer">
           <a href="https://www.facebook.com/arkharven254" target="_blank">
             <i class="fa-brands fa-facebook"></i>
@@ -52,8 +52,10 @@
             <p>Call&nbsp;us</p>
           </a>
         </div>
-      </section>
-      <section>
+      </div>
+    </section>
+    <section>
+      <div class="container">
         <div class="sContainer">
           <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="80">
         </div>
@@ -71,496 +73,494 @@
           <p>Call&nbsp;us</p>
         </a>
         <i class="fa-solid fa-bars" onclick="toggleSideBar()"></i>
-      </section>
-    </header>
-    <div class="overlay" id="overlay" onclick="toggleSideBar()"></div>
-    <div class="sideBar" id="sidebar">
-      <div class="sContainer">
-        <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="100">
-        <i class="fa-solid fa-xmark" onclick="toggleSideBar()"></i>
       </div>
-      <ul>
-        <a href="" class="active">Home</a>
-        <a href="">About&nbsp;us</a>
-        <a href="">Lands</a>
-        <a href="">Houses</a>
-        <a href="">Villas</a>
-        <a href="">Apartments</a>
-        <a href="">Motors</a>
-      </ul>
-      <a class="ercr" href="https://mail.google.com/mail/?view=cm&to=arkhaven23@gmail.com" target="_blank">
-        <i class="fa-solid fa-envelope"></i>&nbsp;arkharven23@gmail.com
-      </a>
-      <a class="ercr" href="#">Help</a>
+    </section>
+  </header>
+  <div class="overlay" id="overlay" onclick="toggleSideBar()"></div>
+  <div class="sideBar" id="sidebar">
+    <div class="sContainer">
+      <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="100">
+      <i class="fa-solid fa-xmark" onclick="toggleSideBar()"></i>
     </div>
-
-    <div id="whatsapp-button" onclick="toggleWhatsAppChat()">
-      <img src="Images/Ark Harven WhatsApp Icon.avif" width="58" alt="Chat with us on WhatsApp">
-    </div>
-
-    <div id="whatsapp-chat-box">
-      <div class="chat-header">
-        <div class="top">
-          <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="35">
-          <p><strong>Ark Harven</strong><br>
-          <small>online</small></p>
-        </div>
-        <i class="fa-solid fa-xmark" onclick="toggleWhatsAppChat()"></i>
-      </div>
-      <div class="chat-body">
-        <div class="chat-container">
-          <div class="chat-bubble">
-            <div class="sender">Ark Harven</div>
-            <div class="message">
-              Welcome! 😊<br>
-              How can I help you?
-            </div>
-            <div class="time">
-              11:31 PM
-            </div>
-          </div>
-        </div>
-        <div class="containerWhp">
-          <textarea id="userMessage" placeholder="Type a message.."></textarea>
-          <img src="Images/Send-35.png" alt="Send Icon" width="45" onclick="sendWhatsAppMessage()">
-        </div>
-      </div>
-    </div>
-
-    <main>
-      <div class="hero-section">
-        <div class="slider-container">
-          <div class="slider-track">
-            <img src="Images/Land Background.avif" data-label="Lands" alt="Slide 1">
-            <img src="Images/Houses Background.avif" data-label="Houses" alt="Slide 2">
-            <img src="Images/Rentals Background.avif" data-label="Rentals" alt="Slide 3">
-            <img src="Images/Motors Background.avif" data-label="Motors" alt="Slide 4">
-            <img src="Images/Land Background.avif" data-label="Land" alt="Slide 1 clone">
-          </div>
-        </div>
-
-        <div class="bottom-fade"></div>
-        <div class="content">
-          <div class="container1">
-            <div class="h1Contr">
-              <h1 id="main-heading" class="main-heading">
-                <span>Your search for<br></span>
-                <span id="typing-text"></span><br>
-                <span> ends&nbsp;here.</span>
-              </h1>
-            </div>
-          </div>
-          <div class="container1">
-            <div class="frmCntr">
-              <form action="">
-                <h1>Start your Property Search </h1>
-                <p>Discover thousands of verified listings</p>
-                <ul class="breadcrumb">
-                  <li class="active">For sale</li>
-                  <li>For Rent / Lease</li>
-                </ul>
-                <div class="inpCntr">
-                  <div class="inpBox">
-                    <label for="">Location</label>
-                    <select name="" id="prdctSch" required>
-                      <option value="">e.g Kilifi</option>
-                      <option value="">Kilifi</option>
-                      <option value="">Mombasa</option>
-                      <option value="">Lamu</option>
-                      <option value="">Garissa</option>
-                      <option value="">Kwale</option><!-- 
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">More</option> -->
-                    </select>
-                  </div>
-                  <div class="inpBox">
-                    <label for="">Category</label>
-                    <select name="" id="prdctSch" required>
-                      <option value="">All Types</option>
-                      <option value="">Land</option>
-                      <option value="">House</option>
-                      <option value="">Villa</option>
-                      <option value="">Apartment</option>
-                      <option value="">Vehicle</option><!-- 
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">More</option> -->
-                    </select>
-                  </div>
-                </div>
-                <div class="inpCntr">
-                  <div class="inpBox">
-                    <label for="">Budget range</label>
-                    <select name="" id="prdctSch" required>
-                      <option value="">Any price</option>
-                      <option value="">Land</option>
-                      <option value="">House</option>
-                      <option value="">Villa</option>
-                      <option value="">Apartment</option>
-                      <option value="">Vehicle</option><!-- 
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">More</option> -->
-                    </select>
-                  </div>
-                  <div class="inpBox">
-                    <label for="">Keyword</label>
-                    <select name="" id="prdctSch" required>
-                      <option value="">e.g beach front</option>
-                      <option value="">Land</option>
-                      <option value="">House</option>
-                      <option value="">Villa</option>
-                      <option value="">Apartment</option>
-                      <option value="">Vehicle</option><!-- 
-                      <option value="">5</option>
-                      <option value="">6</option>
-                      <option value="">7</option>
-                      <option value="">8</option>
-                      <option value="">9</option>
-                      <option value="">10</option>
-                      <option value="">More</option> -->
-                    </select>
-                  </div>
-                </div>
-                <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;property</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="sarchR">
-        <form>
-          <h2>What are you Looking for?</h2>
-          <select name="" id="prdctSch" required>
-            <option value="">-- Select your prefered search --</option>
-            <option value="">Land</option>
-            <option value="">Rentals</option>
-            <option value="">House</option>
-            <option value="">Plot</option>
-            <option value="">Motor vehicle</option>
-            <option value="">Apartment</option>
-            <option value="">Beach house</option>
-          </select>
-          <button type="submit">Search</button>
-        </form>
-
-        <div class="vertical-or">
-          <span>OR <i class="fa-regular fa-circle-right"></i></span>
-        </div>
-
-        <div class="horizontal-or">
-          <div class="line"></div>
-          <div class="contentH">
-            <span>OR</span>
-            <i class="fa-regular fa-circle-down"></i>
-          </div>
-          <div class="line"></div>
-        </div>
-        <form>
-          <h2>Do you want to specify your search?</h2>
-          <div class="fContainer">
-            <div class="inpBox">
-              <label for="">Your search</label>
-              <select name="" id="prdctSch" required>
-                <option value="">-- Select your prefered search --</option>
-                <option value="">Land</option>
-                <option value="">Rentals</option>
-                <option value="">House</option>
-                <option value="">Plot</option>
-                <option value="">Motor vehicle</option>
-                <option value="">Apartment</option>
-                <option value="">Beach house</option>
-              </select>
-            </div>
-          </div>
-          <div class="fContainer">
-            <div class="inpBox">
-              <label for="">Bedroom(s)</label>
-              <select name="" id="prdctSch" required>
-                <option value="">e.g 2 bedroom</option>
-                <option value="">Single room</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option>
-                <option value="">More</option>
-              </select>
-            </div>
-            <div class="inpBox">
-              <label for="">Bathroom(s)</label>
-              <select name="" id="prdctSch" required>
-                <option value="">-- Select --</option>
-                <option value="">None</option>
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">More</option>
-              </select>
-            </div>
-          </div>
-          <div class="fContainer">
-            <div class="inpBox">
-              <label for="">Location (County)</label>
-              <select name="" id="prdctSch" required>
-                <option value="">e.g Kilifi</option><!-- 
-                <option value="">Nairobi</option>
-                <option value="">Mombasa</option> -->
-                <option value="">Kilifi</option>
-                <!-- <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-                <option value="">6</option>
-                <option value="">7</option>
-                <option value="">8</option>
-                <option value="">9</option>
-                <option value="">10</option> -->
-              </select>
-            </div>
-          </div>
-          <div class="fContainer">
-            <div class="slider-price-container">
-              <div class="slider-label">Price (<span id="minVal">100,000</span> - <span id="maxVal">100,000,000</span>) KES</div>
-              <input type="range" id="minRange" min="100000" max="100000000" step="10000" value="100000">
-              <input type="range" id="maxRange" min="100000" max="100000000" step="10000" value="100000000">
-            </div>
-          </div>
-          <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
-        </form>
-      </div>
-      <div class="lstngs">
-        <div class="lstngsHd">
-          <i class="fa-regular fa-rectangle-list"></i>
-          <h1>0UR&nbsp;NEW&nbsp;LISTINGS</h1>
-        </div>
-        <div class="lstngsContanier">
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>Mwahi Wema<br><span>Real Estate Agent</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>100k</p>
-              </div>
-            </div>
-          </div>
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Rentals Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>Justine Kaluhi<br><span>Real Estate Agent</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 1,500,089</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>5</p>
-              </div>
-            </div>
-          </div>
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Houses Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>WestKenya Factory<br><span>Kenyan Company</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Kimilili, <strong>Bungoma</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 10M</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>1.1k</p>
-              </div>
-            </div>
-          </div>
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>Locovia Realators<br><span>Real Estate Agent</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Joska, <strong>Nairobi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>30</p>
-              </div>
-            </div>
-          </div>
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Beach Villas Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>ArkHaven Test<br><span>Real Estate company</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Diani, <strong>Mombasa</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 45,009,500</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>4k</p>
-              </div>
-            </div>
-          </div>
-          <div class="lstngsDiv">
-            <p class="avbiltyPrgh available">Available</p>
-            <img class="lstngImg" src="Images/Motors Background.avif" alt="ListedLi">
-            <div class="lstngsLower">
-              <div class="sellerPrfl">
-                <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
-                <p>Kubende Kevin<br><span>Real Estate Agent</span></p>
-              </div>
-              <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
-              <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 150M</strong></div>
-            </div>
-            <div class="lANDdL">
-              <p class="view">View details</p>
-              <div class="innerIs">
-                <i class="fa-solid fa-heart"></i>
-                <p>30k</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="servcs">
-        <div class="servcsHder">
-          <h1>Our Property Solutions</h1>
-          <p>At Ark Harven, we provide trusted real estate services tailored to meet diverse needs — from land acquisition to luxurious living and reliable mobility.</p>
-        </div>
-        <div class="servcsContainer">
-          <a href="#" class="scContainer">
-            <img src="Images/Land Illustration.avif" alt="Land Illustration" width="250">
-            <h2>Land</h2>
-            <p>Secure prime plots in fast-growing areas, ideal for residential, commercial, or investment development.</p>
-          </a>
-          <a href="#" class="scContainer">
-            <img src="Images/House Illustration.avif" alt="House Illustration" width="250">
-            <h2>House</h2>
-            <p>Explore affordable and stylish homes designed for comfort and family living in well-planned communities.</p>
-          </a>
-          <a href="#" class="scContainer">
-            <img src="Images/Villas Illustration.avif" alt="Villas Illustration" width="250">
-            <h2>Villas</h2>
-            <p>Indulge in high-end living with exclusive villas featuring private spaces, modern architecture, and luxury amenities.</p>
-          </a>
-          <a href="#" class="scContainer">
-            <img src="Images/Apartments Illustration.avif" alt="Apartments Illustration" width="250">
-            <h2>Apartments</h2>
-            <p>Find budget-friendly or executive apartment units in prime locations with great accessibility and lifestyle features.</p>
-          </a>
-          <a href="#" class="scContainer">
-            <img src="Images/Motors Illustration.avif" alt="Motors Illustration" width="250">
-            <h2>Motors</h2>
-            <p>Reliable vehicle options tailored to your mobility needs — from personal cars to commercial-use vans.</p>
-          </a>
-        </div>
-      </div>
-    </main>
-    <footer>
-      <div class="ftrContainer">
-        <form>
-          <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="90">
-          <h1>We'll keep you <strong>updated!</strong></h1>
-          <p>Subscribe to our newsletter to receive updates from Ark Harven</p>
-          <input type="text" placeholder="Enter your email here">
-          <button type="submit">Join our newsletter</button>
-        </form>
-        <div class="inFCntr lnks">
-          <div class="inInDiv">
-            <h4>Ark Harven Links</h4>
-            <a href="">Home</a>
-            <a href="">About Us</a>
-            <a href="">Lands</a>
-            <a href="">Houses</a>
-            <a href="">Villas</a>
-            <a href="">Apartments</a>
-            <a href="">Motors</a>
-            <a href="">Get an Account with us</a>
-            <a href="">FAQs</a>
-          </div>
-        </div>
-        <div class="inFCntr">
-          <div class="inInDiv last-child">
-            <h4>Our Ark got you sorted!</h4>
-            <div>
-              <p>Pwani University Area near Cherowamaye,<br>Kilifi, KENYA</p>
-              <p></p>
-              <p>+254 708 670396</p>
-            </div>
-            <h4>Find us on the internet</h4>
-            <div class="sContainer">
-              <a href="https://www.facebook.com/arkharven254" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a><a href="https://www.instagram.com/arkhavenproperties5" target="_blank">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-              <a href=""><i class="fa-brands fa-linkedin"></i></a>
-              <a href="https://www.tiktok.com/@arkharvenproperties1" target="_blank">
-                <i class="fa-brands fa-tiktok"></i>
-              </a>
-              <a href="https://x.com/arkharven254" target="_blank">
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </a>
-            </div>
-            <div>
-              <a href="">Terms and conditions <i class="fa-solid fa-link"></i></a><br>
-              <a href="">Privacy policy <i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <p class="fterP">&copy; 2025 <a href="">ArkHarven.com</a>, All Rights Reserved</p>
-    </footer>
+    <ul>
+      <a href="" class="active">Home</a>
+      <a href="">About&nbsp;us</a>
+      <a href="">Lands</a>
+      <a href="">Houses</a>
+      <a href="">Villas</a>
+      <a href="">Apartments</a>
+      <a href="">Motors</a>
+    </ul>
+    <a class="ercr" href="https://mail.google.com/mail/?view=cm&to=arkhaven23@gmail.com" target="_blank">
+      <i class="fa-solid fa-envelope"></i>&nbsp;arkharven23@gmail.com
+    </a>
+    <a class="ercr" href="#">Help</a>
   </div>
+
+  <div id="whatsapp-button" onclick="toggleWhatsAppChat()">
+    <img src="Images/Ark Harven WhatsApp Icon.avif" width="58" alt="Chat with us on WhatsApp">
+  </div>
+
+  <div id="whatsapp-chat-box">
+    <div class="chat-header">
+      <div class="top">
+        <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="35">
+        <p><strong>Ark Harven</strong><br>
+        <small>online</small></p>
+      </div>
+      <i class="fa-solid fa-xmark" onclick="toggleWhatsAppChat()"></i>
+    </div>
+    <div class="chat-body">
+      <div class="chat-container">
+        <div class="chat-bubble typing" id="typingIndicator">
+          <div class="sender">Ark Harven</div>
+          <div class="typing-indicator">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+      <div class="containerWhp">
+        <textarea id="userMessage" placeholder="Type a message.."></textarea>
+        <img src="Images/Send-35.png" alt="Send Icon" width="45" onclick="sendWhatsAppMessage()">
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div class="hero-section">
+      <div class="slider-container">
+        <div class="slider-track">
+          <img src="Images/Land Background.avif" data-label="Lands" alt="Slide 1">
+          <img src="Images/Houses Background.avif" data-label="Houses" alt="Slide 2">
+          <img src="Images/Rentals Background.avif" data-label="Rentals" alt="Slide 3">
+          <img src="Images/Motors Background.avif" data-label="Motors" alt="Slide 4">
+          <img src="Images/Land Background.avif" data-label="Land" alt="Slide 1 clone">
+        </div>
+      </div>
+
+      <div class="bottom-fade"></div>
+      <div class="content">
+        <div class="container1">
+          <div class="h1Contr">
+            <h1 id="main-heading" class="main-heading">
+              <span>Your search for<br></span>
+              <span id="typing-text"></span><br>
+              <span> ends&nbsp;here.</span>
+            </h1>
+          </div>
+        </div>
+        <div class="container1">
+          <div class="frmCntr">
+            <form action="">
+              <h1>Start your Property Search </h1>
+              <p>Discover thousands of verified listings</p>
+              <ul class="breadcrumb">
+                <li class="active">For sale</li>
+                <li>For Rent / Lease</li>
+              </ul>
+              <div class="inpCntr">
+                <div class="inpBox">
+                  <label for="">Location</label>
+                  <select name="" id="prdctSch" required>
+                    <option value="">e.g Kilifi</option>
+                    <option value="">Kilifi</option>
+                    <option value="">Mombasa</option>
+                    <option value="">Lamu</option>
+                    <option value="">Garissa</option>
+                    <option value="">Kwale</option><!-- 
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">More</option> -->
+                  </select>
+                </div>
+                <div class="inpBox">
+                  <label for="">Category</label>
+                  <select name="" id="prdctSch" required>
+                    <option value="">All Types</option>
+                    <option value="">Land</option>
+                    <option value="">House</option>
+                    <option value="">Villa</option>
+                    <option value="">Apartment</option>
+                    <option value="">Vehicle</option><!-- 
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">More</option> -->
+                  </select>
+                </div>
+              </div>
+              <div class="inpCntr">
+                <div class="inpBox">
+                  <label for="">Budget range</label>
+                  <select name="" id="prdctSch" required>
+                    <option value="">Any price</option>
+                    <option value="">Land</option>
+                    <option value="">House</option>
+                    <option value="">Villa</option>
+                    <option value="">Apartment</option>
+                    <option value="">Vehicle</option><!-- 
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">More</option> -->
+                  </select>
+                </div>
+                <div class="inpBox">
+                  <label for="">Keyword</label>
+                  <select name="" id="prdctSch" required>
+                    <option value="">e.g beach front</option>
+                    <option value="">Land</option>
+                    <option value="">House</option>
+                    <option value="">Villa</option>
+                    <option value="">Apartment</option>
+                    <option value="">Vehicle</option><!-- 
+                    <option value="">5</option>
+                    <option value="">6</option>
+                    <option value="">7</option>
+                    <option value="">8</option>
+                    <option value="">9</option>
+                    <option value="">10</option>
+                    <option value="">More</option> -->
+                  </select>
+                </div>
+              </div>
+              <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;property</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sarchR container">
+      <form>
+        <h2>What are you Looking for?</h2>
+        <select name="" id="prdctSch" required>
+          <option value="">-- Select your prefered search --</option>
+          <option value="">Land</option>
+          <option value="">Rentals</option>
+          <option value="">House</option>
+          <option value="">Plot</option>
+          <option value="">Motor vehicle</option>
+          <option value="">Apartment</option>
+          <option value="">Beach house</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+
+      <div class="vertical-or">
+        <span>OR <i class="fa-regular fa-circle-right"></i></span>
+      </div>
+
+      <div class="horizontal-or">
+        <div class="line"></div>
+        <div class="contentH">
+          <span>OR</span>
+          <i class="fa-regular fa-circle-down"></i>
+        </div>
+        <div class="line"></div>
+      </div>
+      <form>
+        <h2>Do you want to specify your search?</h2>
+        <div class="fContainer">
+          <div class="inpBox">
+            <label for="">Your search</label>
+            <select name="" id="prdctSch" required>
+              <option value="">-- Select your prefered search --</option>
+              <option value="">Land</option>
+              <option value="">Rentals</option>
+              <option value="">House</option>
+              <option value="">Plot</option>
+              <option value="">Motor vehicle</option>
+              <option value="">Apartment</option>
+              <option value="">Beach house</option>
+            </select>
+          </div>
+        </div>
+        <div class="fContainer">
+          <div class="inpBox">
+            <label for="">Bedroom(s)</label>
+            <select name="" id="prdctSch" required>
+              <option value="">e.g 2 bedroom</option>
+              <option value="">Single room</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option>
+              <option value="">More</option>
+            </select>
+          </div>
+          <div class="inpBox">
+            <label for="">Bathroom(s)</label>
+            <select name="" id="prdctSch" required>
+              <option value="">-- Select --</option>
+              <option value="">None</option>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">More</option>
+            </select>
+          </div>
+        </div>
+        <div class="fContainer">
+          <div class="inpBox">
+            <label for="">Location (County)</label>
+            <select name="" id="prdctSch" required>
+              <option value="">e.g Kilifi</option><!-- 
+              <option value="">Nairobi</option>
+              <option value="">Mombasa</option> -->
+              <option value="">Kilifi</option>
+              <!-- <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+              <option value="">7</option>
+              <option value="">8</option>
+              <option value="">9</option>
+              <option value="">10</option> -->
+            </select>
+          </div>
+        </div>
+        <div class="fContainer">
+          <div class="slider-price-container">
+            <div class="slider-label">Price (<span id="minVal">100,000</span> - <span id="maxVal">100,000,000</span>) KES</div>
+            <input type="range" id="minRange" min="100000" max="100000000" step="10000" value="100000">
+            <input type="range" id="maxRange" min="100000" max="100000000" step="10000" value="100000000">
+          </div>
+        </div>
+        <button type="submit"><i class="fa-solid fa-magnifying-glass-location"></i>&nbsp;Find&nbsp;house</button>
+      </form>
+    </div>
+    <div class="lstngs">
+      <div class="lstngsHd container">
+        <i class="fa-regular fa-rectangle-list"></i>
+        <h1>0UR&nbsp;NEW&nbsp;LISTINGS</h1>
+      </div>
+      <div class="lstngsContanier container">
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>Mwahi Wema<br><span>Real Estate Agent</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>100k</p>
+            </div>
+          </div>
+        </div>
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Rentals Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>Justine Kaluhi<br><span>Real Estate Agent</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 1,500,089</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>5</p>
+            </div>
+          </div>
+        </div>
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Houses Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>WestKenya Factory<br><span>Kenyan Company</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Kimilili, <strong>Bungoma</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 10M</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>1.1k</p>
+            </div>
+          </div>
+        </div>
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Land Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>Locovia Realators<br><span>Real Estate Agent</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Joska, <strong>Nairobi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 15M</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>30</p>
+            </div>
+          </div>
+        </div>
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Beach Villas Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>ArkHaven Test<br><span>Real Estate company</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Diani, <strong>Mombasa</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 45,009,500</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>4k</p>
+            </div>
+          </div>
+        </div>
+        <div class="lstngsDiv">
+          <p class="avbiltyPrgh available">Available</p>
+          <img class="lstngImg" src="Images/Motors Background.avif" alt="ListedLi">
+          <div class="lstngsLower">
+            <div class="sellerPrfl">
+              <img src="Images/Motors Background.avif" alt="Seller Profile" width="38">
+              <p>Kubende Kevin<br><span>Real Estate Agent</span></p>
+            </div>
+            <p class="descrnP">This <span class="lstngName">Property</span> is located in <span class="lctin"><i class="fa-solid fa-location-dot"></i> Mnarani, <strong>Kilifi</strong></span> and was listed on <span class="dt">July 2, 2025</span>.</p>
+            <div class="price"><i class="fa-solid fa-tag"></i> <strong>KES 150M</strong></div>
+          </div>
+          <div class="lANDdL">
+            <p class="view">View details</p>
+            <div class="innerIs">
+              <i class="fa-solid fa-heart"></i>
+              <p>30k</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="servcs container">
+      <div class="servcsHder">
+        <h1>Our Property Solutions</h1>
+        <p>At Ark Harven, we provide trusted real estate services tailored to meet diverse needs — from land acquisition to luxurious living and reliable mobility.</p>
+      </div>
+      <div class="servcsContainer">
+        <a href="#" class="scContainer">
+          <img src="Images/Land Illustration.avif" alt="Land Illustration" width="250">
+          <h2>Land</h2>
+          <p>Secure prime plots in fast-growing areas, ideal for residential, commercial, or investment development.</p>
+        </a>
+        <a href="#" class="scContainer">
+          <img src="Images/House Illustration.avif" alt="House Illustration" width="250">
+          <h2>House</h2>
+          <p>Explore affordable and stylish homes designed for comfort and family living in well-planned communities.</p>
+        </a>
+        <a href="#" class="scContainer">
+          <img src="Images/Villas Illustration.avif" alt="Villas Illustration" width="250">
+          <h2>Villas</h2>
+          <p>Indulge in high-end living with exclusive villas featuring private spaces, modern architecture, and luxury amenities.</p>
+        </a>
+        <a href="#" class="scContainer">
+          <img src="Images/Apartments Illustration.avif" alt="Apartments Illustration" width="250">
+          <h2>Apartments</h2>
+          <p>Find budget-friendly or executive apartment units in prime locations with great accessibility and lifestyle features.</p>
+        </a>
+        <a href="#" class="scContainer">
+          <img src="Images/Motors Illustration.avif" alt="Motors Illustration" width="250">
+          <h2>Motors</h2>
+          <p>Reliable vehicle options tailored to your mobility needs — from personal cars to commercial-use vans.</p>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="ftrContainer container">
+      <form>
+        <img src="Images/Ark Harven Logo.avif" alt="Ark Harven Logo" width="90">
+        <h1>We'll keep you <strong>updated!</strong></h1>
+        <p>Subscribe to our newsletter to receive updates from Ark Harven</p>
+        <input type="text" placeholder="Enter your email here">
+        <button type="submit">Join our newsletter</button>
+      </form>
+      <div class="inFCntr lnks">
+        <div class="inInDiv">
+          <h4>Ark Harven Links</h4>
+          <a href="">Home</a>
+          <a href="">About Us</a>
+          <a href="">Lands</a>
+          <a href="">Houses</a>
+          <a href="">Villas</a>
+          <a href="">Apartments</a>
+          <a href="">Motors</a>
+          <a href="">Get an Account with us</a>
+          <a href="">FAQs</a>
+        </div>
+      </div>
+      <div class="inFCntr">
+        <div class="inInDiv last-child">
+          <h4>Our Ark got you sorted!</h4>
+          <div>
+            <p>Pwani University Area near Cherowamaye,<br>Kilifi, KENYA</p>
+            <p></p>
+            <p>+254 708 670396</p>
+          </div>
+          <h4>Find us on the internet</h4>
+          <div class="sContainer">
+            <a href="https://www.facebook.com/arkharven254" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a><a href="https://www.instagram.com/arkhavenproperties5" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@arkharvenproperties1" target="_blank">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+            <a href="https://x.com/arkharven254" target="_blank">
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </a>
+          </div>
+          <div>
+            <a href="">Terms and conditions <i class="fa-solid fa-link"></i></a><br>
+            <a href="">Privacy policy <i class="fa-solid fa-link"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="fterP">&copy; 2025 <a href="">ArkHarven.com</a>, All Rights Reserved</p>
+    </div>
+  </footer>
   <script src="Scripts/general.js"></script>
 </body>
 </html>
